@@ -1,0 +1,50 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# vsim -gui -modelsimini C:/Users/Mirko/AppData/Local/Temp/SigasiCompileCache8018464570191876065/CacheCoherence/mentor/modelsim.ini work.tb(behavior) 
+# Start time: 22:39:17 on Nov 08,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.logpack(body)
+# Loading work.tb(behavior)
+# Loading work.cache_controller(rtl)
+# Loading work.llc_memory(rtl)
+# ** Warning: (vsim-8683) Uninitialized out port /tb/cc_uut/RouterValidOut has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /tb/cc_uut/RouterDataOut(15 downto 0) has no driver.
+# 
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# 
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 34
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 35
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 36
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 37
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 38
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 39
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 40
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 41
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 42
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 43
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 44
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 45
+# ** Error: unknown option "wave"
+# Executing ONERROR command at macro C:\Users\Mirko\workspaceSigasi\CacheCoherence\wave_controller.do line 46
+run
+# End time: 22:40:33 on Nov 08,2015, Elapsed time: 0:01:16
+# Errors: 39, Warnings: 2
