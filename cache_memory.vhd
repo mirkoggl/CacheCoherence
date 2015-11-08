@@ -30,7 +30,7 @@ architecture RTL of cache_memory is
 
 	signal mem                        : cache_t                                    := (others => (others => '0'));
 	signal tag_table                  : tag_table_t                                := (others => (others => '0'));
-	signal valid_vector, dirty_vector : std_logic_vector(CACHE_WIDTH - 1 downto 0) := (others => '0');
+	signal valid_vector, dirty_vector : std_logic_vector(2 ** CACHE_WIDTH - 1 downto 0) := (others => '0');
 
 	alias tag   : std_logic_vector(BLOCK_WIDTH - CACHE_WIDTH - 1 downto 0) is addr(BLOCK_WIDTH - 1 downto CACHE_WIDTH);
 	alias index : std_logic_vector(CACHE_WIDTH - 1 downto 0) is addr(CACHE_WIDTH - 1 downto 0);
@@ -43,6 +43,8 @@ begin
 			hit <= '0';
 		elsif (rising_edge(clk)) then
 			
+			hit <= '0';
+			
 			if op = "01" then -- Write
 				mem(CONV_INTEGER(index)) <= data;
 				tag_table(CONV_INTEGER(index)) <= tag;
@@ -52,10 +54,8 @@ begin
 			elsif op = "00" then -- Read
 				if tag_table(CONV_INTEGER(index)) = tag and valid_vector(CONV_INTEGER(index)) = '1' then
 					hit <= '1';
-				else 
-					hit <= '0';
 				end if;
-			else -- Invalid Block
+			elsif op = "10" then -- Invalid Block
 				valid_vector(CONV_INTEGER(index)) <= '0';
 			end if;
 			
